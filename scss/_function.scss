@@ -1,0 +1,26 @@
+@function setTextColor($color) {
+    @if(lightness($color) > 75) {
+        @return #333;
+
+    }
+
+    @else {
+        @return #fff;
+
+    }
+}
+
+@mixin setBackground($color) {
+    background: $color;
+    color: setTextColor($lightColor);
+}
+
+#cta4 {
+    @extend #cta2;
+
+    @include setBackground($lightColor);
+
+    h2 {
+        color: setTextColor($lightColor)
+    }
+}

@@ -1,0 +1,40 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+$primaryColor : #f3a683;
+$secondaryColor : #f7d794;
+$lightColor : #353b48;
+$darkColor : #353b48;
+$textColor : #262626;
+$textWhite : #ffffff;
+$fontPrimary : 'Poppins',
+sans-serif;
+$fontSecondary : 'Poppins',
+sans-serif;
+
+body {
+    color: #262626;
+    font-size: 15px;
+    font-family: $fontPrimary;
+    font-weight: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $fontSecondary;
+    margin: 0 0 15px;
+}
+
+p {
+    font-family: $fontPrimary;
+    margin: 0 0 15px;
+}

@@ -1,0 +1,18 @@
+@mixin flexCenter($nmColor) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background-color: $nmColor;
+}
+
+
+#cta {
+    @include flexCenter(aqua);
+
+}
+
+#cta2 {
+    @include flexCenter(#9c88ff);
+
+}
